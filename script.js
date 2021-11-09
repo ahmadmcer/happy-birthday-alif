@@ -1,5 +1,4 @@
 // Get Data
-const timer = document.getElementById('timer')
 const box = document.getElementById('box')
 const giftCard = document.getElementById('gift-card')
 const stars = document.getElementById('stars')

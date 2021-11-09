@@ -6,9 +6,7 @@
 :root {
   --blue: hsl(210, 100%, 50%);
   --dark-blue: hsl(210, 100%, 25%);
-  --dark-white: hsl(0, 0%, 50%);
-  --shadow-blue: 0 1px 0 var(--dark-blue), 0 2px 0 var(--dark-blue), 0 3px 0 var(--dark-blue), 0 4px 0 var(--dark-blue), 0 8px 4px hsla(0, 0%, 0%, .5);
-  --shadow-white: 0 1px 0 var(--dark-white), 0 2px 0 var(--dark-white), 0 3px 0 var(--dark-white), 0 4px 0 var(--dark-white), 0 8px 4px hsla(0, 0%, 0%, .5);
+  --shadow-3d: 0 1px 0 var(--dark-blue), 0 2px 0 var(--dark-blue), 0 3px 0 var(--dark-blue), 0 4px 0 var(--dark-blue), 0 8px 4px hsla(0, 0%, 0%, .5);
 }
 
 
@@ -23,43 +21,6 @@ body {
   height: 100%;
   position: relative;
   margin: 0;
-}
-
-
-/* Timer */
-.timer {
-  color: white;
-  background-image: linear-gradient(var(--blue), var(--dark-blue));
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  transition-duration: 1s;
-}
-
-.timer-container {
-  text-align: center;
-  width: 100vw;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.timer-container h1, .timer-container h2 {
-  font-family: 'Robotp Mono', monospace;
-  text-shadow: var(--shadow-white);
-  margin: 0;
-}
-
-.timer-container h1 {
-  font-size: 3em;
-  margin-bottom: .5em;
-}
-
-.timer-container h2 {
-  font-size: 4em;
 }
 
 
@@ -189,8 +150,8 @@ body {
   width: 192px;
   position: relative;
   border: 8px solid var(--blue);
-  box-shadow: var(--shadow-blue);
   border-radius: 50%;
+  box-shadow: var(--shadow-3d);
 }
 
 .content img:hover {
@@ -199,8 +160,8 @@ body {
   margin-top: -16px;
 }
 
-  text-shadow: var(--shadow-blue);
 .content h2, .content h1 {
+  text-shadow: var(--shadow-3d);
 }
 
 .content h2 {
@@ -232,8 +193,8 @@ body {
   border: none;
   border-radius: 50%;
   position: absolute;
-  box-shadow: var(--shadow-blue);
   bottom: 115%;
+  box-shadow: var(--shadow-3d);
   transition-duration: 300ms;
 }
 
@@ -273,8 +234,8 @@ body {
 .credit img {
   background-color: var(--blue);
   width: 100%;
-  box-shadow: var(--shadow-blue);
   border-radius: 50%;
+  box-shadow: var(--shadow-3d);
 }
 
 
